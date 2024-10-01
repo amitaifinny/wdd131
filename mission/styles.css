@@ -10,6 +10,15 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark h3 {
+    color:#4F9ACF;
+}
+
 img {
     width: 150px;
     display: block;
@@ -50,6 +59,13 @@ h1,h3 {
 #four {
     padding-top:20px;
 }
+/* instead of these 4 id values, it is much easier to instead select the ol and the indvidual li's. Do this by this
+
+ol li {
+padding: ;
+}
+
+*/
 
 .content {
     border: 1px solid black;
