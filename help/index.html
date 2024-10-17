@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul>
+        <li>Menu</li>  
+        <li>Menu</li>  
+        <li>Menu</li>  
+        <li>Menu</li>  
+        <li>Menu</li>  
+        <li>Menu</li>  
+        <li>Menu</li>  
+        <li>Menu</li>  
+    </ul>
+    <script>
+        //variables
+        //declares variables
+        const a = 1 //inmutable can not change
+        let b = 2 //mutable can change
+        var c = 3
+
+        const obj = {
+            a: 1,
+            b: 2,
+            c: 3,
+            d: 4, 
+
+            getName: () => {
+                return "McKay Finlayson"
+        }
+
+    }
+        function sum(a,b) {
+            return a + b //after it is all calculated, everything returns
+        //a function is a chance to reuse code
+        }
+        const sum2 = (a, b) => a + b
+
+        const sum3 = function(a, b) {
+            return a + b
+        }
+
+        console.log(obj.a)
+        console.log(obj.getName())
+        //object.function here
+
+        const d = document
+        //d.getElementById()
+        //these two are the same
+
+        //while runs an endless loop. Do this if you want to do something repeatedly
+        //while (counter < 10)
+
+        let counter = 0
+        while (counter < 10) {
+            console.log('hello')
+            counter++
+        }
+        //1. Declare a variable (i), the limiter, the build up to the limiter
+        for (let i = 0; i < 10; i++) {
+            console.log('I am in a for loop' + i)
+        }
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>

@@ -9,6 +9,7 @@
  --secondary-font: Mooli, san-serif;
  }
  
+ /* For better organization, next time I will Add comments along the way. HTML and CSS should align side by side.*/
 
  * {
    text-align: center;
@@ -26,6 +27,10 @@
     background-color: var(--primary-color);
     font-family: var(--primary-font);
     margin: auto 0;
+ }
+
+ body {
+  margin: 0;
  }
 
  nav {
@@ -46,8 +51,12 @@
    font-family: var(--primary-font);
    text-decoration: underline;
  }
-
- button {
+ 
+ .hide {
+  display: none;
+ }
+ 
+ .menu-button {
   text-align: center;
    color: black;
    text-decoration: none;
@@ -58,8 +67,37 @@
    background: none;
    border: none;
    font-size: 30px;
+   cursor: pointer;
  }
 
+ .viewer .close-viewer {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    top: 1rem;
+    right: 1rem;
+}
+
+ .viewer {
+  position: fixed;
+  top:0;left:0;bottom:0;right:0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.viewer img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 7px solid;
+  background-color: transparent;
+  padding: 25px;
+}
  h3 {
     color: black;
     font-family: var(--primary-font);
@@ -68,7 +106,7 @@
     padding-top: 15px;
  }
 
- img {
+ figure img {
    max-width: 100%;
    height: 200px;
    width: 200px;
@@ -76,6 +114,7 @@
    border: 7px solid white;
    box-shadow: 5px 5px 5px black;
  }
+
 
  .gallery {
    display: grid;
@@ -95,44 +134,74 @@
    padding-left: 150px;
    color: var(--text-light);
    font-family: var(--primary-font);
- }
-
+  }
+  
  @media screen and (max-width: 970px) {
-  /* Adjust styles for smaller screens */
-  nav {
+   /* Adjust styles for smaller screens */
+   nav {
     flex-direction: column;
     justify-content: center;
     padding: 0;
   }
-
+  
   nav a {
     display: block;
     text-align: center;
     padding: 15px;
   }
-
+  
   .gallery {
     grid-template-columns: 1fr; /* Adjust columns as needed */
     padding: 10px;
   }
+
 }
 
 @media screen and (min-width: 700px) and (max-width: 1225px) {
-  .gallery {
-  display:grid;  
+  .gallery { 
   grid-template-columns: 1fr 1fr;
   }
-  
-  nav a {
-    display:none
+
+  .viewer img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-height: 100%;
+    border: none;
+    max-width: min(100%, 800px);
+    background-color: rgba(0, 0, 0, 0.75);
   }
+
 }
 
 @media screen and (min-width: 1226px) {
   .gallery {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  button {
-    display:none
+  .menu-button {
+    display: none;
   }
+  
+  nav {
+    display: flex !important;
+  }
+
+  .viewer {
+  padding: 20px;
+}
+
+.viewer img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-height: 100%;
+  border: none;
+  max-width: min(100%, 800px);
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+}
+
+nav.hide {
+  display: none;
 }
