@@ -2,7 +2,7 @@
     --primary-color: #ccd5ae;
     --secondary-color: #e9edc9;
     --accent-color: #bc6c25;
-    --primary-font: Arial, Helvetica,sans-serif;
+    --primary-font: Arial, Helvetica, sans-serif;
     --headline-font: Montserrat, san-serif;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
@@ -14,10 +14,26 @@ body {
     margin: 0;
 }
 
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+    
+    color: black;
+}
+
+.skiptocontent a:focus {
+    font-weight: bold;  
+    background-color: red;      
+    padding: 1rem 3rem; 
+    position: absolute;
+    top: 0px;
+}
+
 main {
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
+
 
 main .filter-container {
     padding: 1rem;
@@ -76,10 +92,10 @@ nav a:hover {
     padding: 2rem;
 }
 
-.blog-content h2 { 
+.blog-content h2 {
     text-align: center;
     color: var(--accent-color);
-} 
+}
 
 .book-image-container {
     width: 100%;
