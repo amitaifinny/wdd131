@@ -9,8 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="McKay Finlayson">
   <meta name="description" content="running blog">
-  <link href="blog.css" rel="stylesheet">
-  <script src="blog.js" defer></script>
+  <link href="./blog.css" rel="stylesheet">
+  <script src="./blog.js" defer></script>
   <title>Silly Blog</title>
 </head>
 
@@ -27,34 +27,38 @@
     </nav>
   </header>
   <main id="maincontent">
-    <div class="blog-post-container">
-      <div class="blog-metadata">
-        <p>
-          date <br />
-          12-16 <br />
-          category<br />
-          rating<br />
-        </p>
-      </div>
-      <div class="blog-content">
-        <h2>Septimus Heap Book One:Magyk</h2>
-        <div class="book-image-container">
-          <img src="bookcover.jpg" alt="image">
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+    <div class="render-blogs-container">
+      <!-- Rendered blog posts go here -->
     </div>
     <div class="filter-container">
       <div class="filter-list">
         <select>
           <option>dumb</option>
         </select>
+
+        <button onclick=createPost()>Create Post</button>
       </div>
     </div>
+
+    <!-- <div class="blog-post-container">
+      <div class="blog-metadata">
+        <p>
+          November 5, 2024 <br />
+          12-16 <br />
+          Fantasy<br />
+          ⭐⭐⭐⭐<br />
+        </p>
+      </div>
+      <div class="blog-content">
+        <h2>Charlotte's Web</h2>
+        <div class="book-image-container">
+          <img src="bookcover2.jpg" alt="image of Charlotte Web bookcover">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.<a href="#more" class="read-more">Read More...</a><div class="read-more-content"></div></p>
+      </div>
+    </div> -->
   </main>
 
 </body>

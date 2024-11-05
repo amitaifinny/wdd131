@@ -106,3 +106,17 @@ nav a:hover {
 img {
     width: 250px;
 }
+
+.read-more-content {
+    display: none;
+  }
+  
+  .read-more {
+    cursor: pointer;
+    color: var(--accent-color);
+  }
+  
+  .read-less {
+    display: none;
+    cursor: pointer;
+  }
