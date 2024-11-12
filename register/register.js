@@ -49,30 +49,54 @@ addParticipantButton.addEventListener('click', () => {
     addParticipantButton.insertAdjacentHTML('beforebegin', newParticipantHTML);
 });
 
-const form = document.getElementById('submitButton');
-const summaryElement = document.getElementById('summary');
-
 function totalFees() {
-  const feeElements = [...document.querySelectorAll("[id^=fee]")];
-//   console.log(feeElements)
-  return feeElements.reduce((total, element) => total + parseFloat(element.value), 0);
+  let feeElements = document.querySelectorAll("[id^=fee]");
+  feeElements = [...feeElements];
+  return feeElements.reduce((total, element) => total + (parseFloat(element.value) || 0), 0);
 }
 
 function successTemplate(info) {
-  return `
-    Thank you ${info.adultName} for registering. You have registered ${info.participantCount} participants and owe $${info.feeTotal} in Fees.
-  `;
+  return `Thank you ${info.name} for registering. You have registered ${info.participants} participants and owe $${info.fees} in Fees.`;    
 }
 
-form.addEventListener('submit', (event) => {
+function submitForm(event) {
   event.preventDefault();
+  const totalFee = totalFees();
+  const adultName = document.getElementById("adult_name").value;
+  const summary = document.getElementById("summary");
 
-  const adultName = document.getElementById('adult_name').value;
-  const participantCount = document.querySelectorAll('.participants').length;
-  const feeTotal = totalFees();
+  document.querySelector("form").style.display = "none";
+  summary.textContent = successTemplate({ name: adultName, participants: participantCount, fees: totalFee });
+  summary.style.display = "block";
+}
 
-  summaryElement.innerHTML = successTemplate({ adultName, participantCount, feeTotal });
-  form.style.display = 'none';
-  summaryElement.style.display = 'block'; // Or use a pre-defined class for hiding/showing
-  element.classlist.add('hide')
-});
+document.querySelector("form").addEventListener("submit", submitForm);
+// const form = document.getElementById('submitButton');
+// const summaryElement = document.getElementById('summary');
+
+// function totalFees() {
+//   const feeElements = [...document.querySelectorAll("[id^=fee]")];
+// //   console.log(feeElements)
+//   return feeElements.reduce((total, element) => total + parseFloat(element.value), 0);
+// }
+
+// function successTemplate(info) {
+//   return `
+//     Thank you ${info.adultName} for registering. You have registered ${info.participantCount} participants and owe $${info.feeTotal} in Fees.
+//   `;
+// }
+
+// form.addEventListener('submit', (event) => {
+//   event.preventDefault();
+
+//   const adultName = document.getElementById('adult_name').value;
+//   const participantCount = document.querySelectorAll('.participants').length;
+//   const feeTotal = totalFees();
+
+//   summaryElement.innerHTML = successTemplate({ adultName, participantCount, feeTotal });
+//   form.style.display = 'none';
+//   summaryElement.style.display = 'block'; // Or use a pre-defined class for hiding/showing
+//   element.classlist.add('hide')
+// });
+
+// document.querySelector("form").addEventListener("submit", submitForm);
