@@ -131,9 +131,6 @@ footer {
     height: 50px;
     display: flex;
     justify-content: center;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1rem; */
     padding-right: 5rem;
     padding-top: 1rem;
 }
