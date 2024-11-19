@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #1B98E0;
     --secondary-color: #59c3c3;
@@ -43,7 +44,7 @@ h1 {
     font-family: var(--headline-font);
     font-size: 40px;
 }
-h3 {
+.recipe-title {
     font-family: var(--headline-font);
     color: var(--primary-color);
     font-size: 30px;
@@ -119,7 +120,7 @@ footer {
 
 #ugly {
     font-size: 0.6em;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     padding-top: 2rem;
     display: flex;
     justify-content: center;
