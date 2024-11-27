@@ -111,6 +111,7 @@ h1 {
     padding-left: 0.1rem;
     border-radius: 0px 5px 5px 0px;
     margin-right: 5rem;
+    cursor: pointer;
 }
 
 .apple-crisp {
