@@ -193,6 +193,11 @@ footer {
     .recipe {
         display: flex;
         flex-direction: row;
+        width: 80rem;
+    }
+
+    .recipe-container {
+        padding-left: 20rem;
     }
 
     .recipe-content p{
@@ -213,9 +218,6 @@ footer {
         height: 350px;
     }
     
-    .recipe {
-        width: 80rem;
-    }
 
     .social {
         padding-right: 5rem;
