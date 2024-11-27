@@ -26,6 +26,7 @@ img {
     border: solid black;
     padding: 0.3rem;
     font-size: bold;
+    margin-right: 10px;
 }
 
 .search-container {
@@ -61,6 +62,9 @@ h1 {
 .recipe-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    padding-left: 3rem;
+    
     /* display: grid;
     padding: 0 2rem;
     grid-template-rows: 1fr max-content;
@@ -75,6 +79,7 @@ h1 {
     border-radius: 5px;
     padding: 1rem;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .recipe-content p {
@@ -108,8 +113,8 @@ h1 {
     margin-right: 5rem;
 }
 
-#apple-crisp {
-    height: 200px;
+.apple-crisp {
+    height: 300px;
     padding-bottom: 1rem;
 }
 
@@ -203,7 +208,7 @@ footer {
         padding-left: 1.5rem;
     }
 
-    #apple-crisp {
+    .apple-crisp {
         height: 350px;
     }
     
@@ -215,7 +220,7 @@ footer {
         padding-right: 5rem;
     }
 
-    #recipe-description {
+    .recipe-description {
         font-size: 20px;
     }
 
