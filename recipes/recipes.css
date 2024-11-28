@@ -178,6 +178,7 @@ footer {
     #ugly {
         padding-left: 0;
     }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -194,10 +195,6 @@ footer {
         display: flex;
         flex-direction: row;
         width: 80rem;
-    }
-
-    .recipe-container {
-        padding-left: 20rem;
     }
 
     .recipe-content p{
@@ -229,5 +226,11 @@ footer {
 
     #ugly {
         padding-left: 2rem;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .recipe-container {
+        padding-left: 15rem;
     }
 }
