@@ -1,0 +1,1 @@
+import avatarCharacters from './description.mjs'
