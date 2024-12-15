@@ -540,7 +540,7 @@ nav {
   cursor: pointer;
 }
 
-.recipe-container {
+.character-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -554,7 +554,7 @@ nav {
   align-items: center; */
 }
 
-.recipe {
+.character {
   display: flex;
   justify-content: center;
   border: 2.5px solid var(--primary-color);
@@ -564,7 +564,7 @@ nav {
   margin-bottom: 2rem;
 }
 
-.recipe-type {
+.character-type {
   display: none;
 }
 
@@ -573,11 +573,11 @@ nav {
   padding-bottom: 1rem;
 }
 
-.recipe-content p {
+.character-content p {
   display: none;
 }
 
-.recipe-title {
+.character-title {
   font-size: 30px;
   margin-bottom: 0;
 }
@@ -601,12 +601,12 @@ nav {
       width: 50px;
   }
 
-  .recipe-container {
+  .character-container {
     display: flex;
     justify-content: center;
   }
 
-  .recipe {
+  .character {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -617,15 +617,15 @@ nav {
     height: 400px;
   }
 
-  .recipe-content p{
+  .character-content p{
       display: flex;
   }
 
-  .recipe-content {
+  .character-content {
       padding-left: 1rem;
   }
   
-  .find-recipe-container, #recipe-find {
+  .find-character-container, #character-find {
       width: 100%;
       margin: auto 0;
   }
@@ -646,21 +646,21 @@ nav {
       width: 50px;
   }
 
-  .recipe {
+  .character {
       display: flex;
       flex-direction: row;
       width: 100%;
   }
 
-  .recipe-content p{
+  .character-content p{
       display: flex;
   }
 
-  .recipe-content {
+  .character-content {
       padding-left: 1rem;
   }
 
-  .recipe-type {
+  .character-type {
     display: inline;
     border: solid var(--accent1-color);
     padding: 0.3rem;
@@ -668,7 +668,7 @@ nav {
     margin-right: 10px;
   }  
   
-  .find-recipe-container, #recipe-find {
+  .find-character-container, #character-find {
       width: 100%;
       margin: auto 0;
       padding-left: 1.5rem;
@@ -683,7 +683,7 @@ nav {
       padding-right: 5rem;
   }
 
-  .recipe-description {
+  .character-description {
       font-size: 20px;
   }
 
