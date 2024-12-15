@@ -9,7 +9,7 @@ const avatarCharacters = [
     character: "Katara",
     description: "A skilled waterbender from the Southern Water Tribe. She is strong-willed, compassionate, and fiercely protective of her loved ones. Katara is a talented healer and a powerful warrior. She often defies societal expectations for women in her culture and is a strong role model.",
     image: "./images/katara_d.png",
-    tags: ["Waterbender", "Healer", "Strong Female Character"]
+    tags: ["Waterbender", "Healer","Strong Willed Female", "Bloodbender"]
   },
   {
     character: "Sokka",
@@ -21,25 +21,25 @@ const avatarCharacters = [
     character: "Toph Beifong",
     description: "A blind earthbending prodigy from the Earth Kingdom. She is rebellious, confident, and a master of earthbending. Toph is a skilled fighter and a valuable asset to the team. She challenges societal norms and proves that blindness is not a limitation.",
     image: "./images/toph_d.png",
-    tags: ["Earthbender", "Blind Fighter", "Rebellious"]
+    tags: ["Earthbender", "Blind Fighter", "Rebellious", "Metalbender"]
   },
   {
     character: "Zuko",
     description: "The exiled Prince of the Fire Nation. He is a skilled firebender, but he is tormented by his past and his desire to regain his honor. Zuko is a complex character who eventually joins the Avatar's team. His journey of redemption and self-discovery is one of the most compelling storylines in the series.",
     image: "./images/zuko_d.png",
-    tags: ["Firebender", "Exiled Prince", "Redemption"]
+    tags: ["Firebender", "Exiled Prince", "Redemption", "Lightningbender"]
   },
   {
     character: "Iroh",
     description: "Zuko's wise and compassionate uncle. He is a former Fire Nation general and a master of tea. Iroh is a mentor to Zuko and a source of wisdom and guidance for the entire team. His teachings on life, love, and loss have resonated with fans of all ages.",
     image: "./images/iroh_d.png",
-    tags: ["Wise Mentor", "Tea Master", "Philosopher"]
+    tags: ["Wise Mentor", "Tea Master", "Philosopher", "Lightningbender", "Firebender"]
   },
   {
     character: "Azula",
     description: "Princess of the Fire Nation and Zuko's younger sister. She is a powerful firebender, a skilled strategist, and a master manipulator. Azula is ruthless, cunning, and obsessed with power. Her complex character and villainous actions make her one of the most memorable antagonists in the series.",
     image: "./images/azula_d.png",
-    tags: ["Firebender", "Villain", "Manipulative"]
+    tags: ["Firebender", "Villain", "Manipulative", "Lightningbender"]
   },
   {
     character: "Mai",
@@ -57,7 +57,7 @@ const avatarCharacters = [
     character: "Ozai",
     description: "The Fire Lord and the main antagonist of the series. He is a powerful firebender and a ruthless ruler. Ozai is obsessed with conquering the world and will stop at nothing to achieve his goals. His tyrannical rule has led to the destruction of countless lives and the imbalance of the world.",
     image: "./images/ozai_d.png",
-    tags: ["Fire Lord", "Villain", "Tyrant"]
+    tags: ["Fire Lord", "Villain", "Tyrant", "Lightningbender"]
   },
   {
     character: "Suki",
@@ -83,29 +83,29 @@ const avatarCharacters = [
     image: "./images/misc_d.webp",
     tags: ["Waterbender", "Bloodbender", "Villain"]
   },
-  {
-    character: "June",
-    description: "A young Earth Kingdom girl who is a skilled metalbender. She is a talented artist and a loyal friend. June is one of the few people who can see through Toph's tough exterior and appreciate her true nature.",
-    image: "./images/misc_d.webp",
-    tags: ["Metalbender", "Artist", "Loyal Friend"]
-  },
+  // {
+  //   character: "June",
+  //   description: "A young Earth Kingdom girl who is a skilled metalbender. She is a talented artist and a loyal friend. June is one of the few people who can see through Toph's tough exterior and appreciate her true nature.",
+  //   image: "./images/misc_d.webp",
+  //   tags: ["Metalbender", "Artist", "Loyal Friend"]
+  // },
   {
     character: "Korra",
     description: "The Avatar after Aang, a headstrong and determined waterbender from the Southern Water Tribe. She is passionate, impulsive, and eager to prove herself. Korra's journey is one of self-discovery and spiritual growth.",
     image: "./images/korra_d.jpg",
-    tags: ["Avatar", "Waterbender", "Headstrong"]
+    tags: ["Avatar", "Water Nation", "Headstrong"]
   },
   {
     character: "Mako",
     description: "A skilled firebender from Republic City. He is a complex character who struggles with his loyalty to his family and his desire to do what is right. Mako is a talented fighter and a loyal friend.",
     image: "./images/misc_d.webp",
-    tags: ["Firebender", "Complex Character", "Loyal Friend"]
+    tags: ["Firebender", "Complex Character", "Loyal Friend", "Lightningbender"]
   },
   {
     character: "Bolin",
     description: "Mako's younger brother and an earthbender. He is kind, goofy, and always looking for the positive side of things. Bolin is a talented comedian and a loyal friend to Korra and Mako.",
     image: "./images/misc_d.webp",
-    tags: ["Earthbender", "Comedian", "Loyal Friend"]
+    tags: ["Earthbender", "Comedian", "Loyal Friend", "Lavabender"]
   },
   {
     character: "Asami Sato",
@@ -123,7 +123,7 @@ const avatarCharacters = [
     character: "Lin Beifong",
     description: "Toph Beifong's daughter and the Chief of Police in Republic City. She is a skilled earthbender and a tough and no-nonsense leader. Lin is dedicated to protecting the city and upholding the law.",
     image: "./images/misc_d.webp",
-    tags: ["Earthbender", "Police Chief", "Tough Leader"]
+    tags: ["Earthbender", "Police Chief", "Tough Leader", "Metalbender"]
   },
   {
     character: "Kuvira",
@@ -138,3 +138,5 @@ const avatarCharacters = [
     tags: ["Airbender", "Villain", "Philosophical"]
   }
 ]
+
+export default avatarCharacters

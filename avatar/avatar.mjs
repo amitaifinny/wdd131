@@ -244,4 +244,6 @@ const avatarQuotes = [
     quote: "The Fire Nation is destroying the world, one nation at a time.",
     image: "./images/jet_d.jpg"
   }
-];
+]
+
+export default avatarQuotes
